@@ -1,0 +1,65 @@
+* {
+    border: 0;
+    padding: 0;
+  }
+  h1{
+    padding: 43px 0px;
+    min-height: 4vh;
+    text-align: center;
+    background-color: #a3a3a5;
+  }
+  table,th,tr,td {
+    border: solid rgb(121, 119, 119);
+    border-collapse: collapse;
+    padding: 14px;
+    font-size: 20px;
+  }
+  .container-fluid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container-fluid .caption {
+    padding: 10px 0 30px 0;
+    font-size: 35px;
+    font-family: "Lucida Calligraphy";
+    text-decoration: underline;
+    color: rgb(34, 33, 33);
+    font-weight: bold;
+  }
+  .container-fluid th {
+    font-size: 22px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: container-fluid;
+  }
+  #data {
+    margin-bottom: 10px;
+  }
+  #data input,
+  button {
+    padding: 10px;
+    width: 90px;
+  }
+  .container-fluid {
+    counter-reset: serial-number;
+  }
+  .container-fluid td:first-child:before {
+    counter-increment: serial-number;
+    content: counter(serial-number);
+    text-align: container-fluid;
+  }
+  .button_top,.button_bottom {
+    border: 2px solid rgb(14, 13, 13);
+    color: black rgb(41, 40, 40);
+    text-align: container-fluid;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    margin: auto -550px auto 610px;
+    cursor: pointer;
+    width: fit-content;
+    display: inline-block;  
+    border-radius: 30px;
+  }
